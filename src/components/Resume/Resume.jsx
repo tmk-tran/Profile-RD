@@ -15,17 +15,13 @@ import {
   faPersonSnowboarding,
   faGamepad,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faCss3Alt,
-  faHtml5,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt, faHtml5, faJs } from "@fortawesome/free-brands-svg-icons";
 
 import "./Resume.css";
 
 export default function Resume() {
   return (
-    <div>
+    <div style={{ width: "50%", border: "1px solid black", margin: "0 auto" }}>
       <Typography variant="h5">Resume Info Here</Typography>
       <div className="resume">
         <div className="resume_left">
@@ -83,9 +79,9 @@ export default function Resume() {
                   <li>
                     <div className="li_wrap">
                       <div className="icon">
-                        <FontAwesomeIcon icon={faHtml5} />
+                        <FontAwesomeIcon icon={faJs} />
                       </div>
-                      <span>HTML</span>
+                      <span>JavaScript</span>
                     </div>
                   </li>
                   <li>
@@ -99,9 +95,9 @@ export default function Resume() {
                   <li>
                     <div className="li_wrap">
                       <div className="icon">
-                        <FontAwesomeIcon icon={faPython} />
+                        <FontAwesomeIcon icon={faHtml5} />
                       </div>
-                      <span>Python</span>
+                      <span>HTML</span>
                     </div>
                   </li>
                   <li>
@@ -137,27 +133,33 @@ export default function Resume() {
         <div className="resume_right">
           <div className="resume_item resume_about">
             <div className="title">
-              <p className="bold2">Objective</p>
+              <Typography variant="h6" id="bold2">
+                Objective
+              </Typography>
             </div>
-            <p>
-              Highly motivated and enthusiastic individual seeking to enroll in
-              the Software Engineering program at Emerging Digital Academy.
-              Looking for a supportive educational structure to develop a solid
-              foundation in programming and software development. Eager to learn
-              from leading experts in the field and to develop the skills and
-              knowledge necessary to start a new career as a successful Software
-              Engineer.
-            </p>
+            <Typography variant="body1">
+              As a passionate and detail-oriented junior software engineer, I am
+              dedicated to crafting efficient and innovative solutions to
+              real-world challenges. With a solid foundation in programming and
+              a commitment to lifelong learning, I bring enthusiasm and
+              adaptability to every project. I am eager to collaborate with
+              experienced teams and contribute my technical skills to drive
+              successful software development initiatives.
+            </Typography>
           </div>
           <div className="resume_item resume_work">
             <div className="title">
-              <p className="bold2">Work Experience</p>
+              <Typography variant="h6" id="bold2">
+                Work Experience
+              </Typography>
             </div>
             <ul className="work">
               <li>
-                <div className="date">2018 - present</div>
+                <div className="date">2018 - 2023</div>
                 <div className="info">
-                  <p className="semi-bold">Senior Field Technician</p>
+                  <Typography variant="h6" style={{ fontSize: "16px" }}>
+                    Senior Field Technician
+                  </Typography>
                   <p>Twin City Garage Door/API Group (West Fargo, ND)</p>
                 </div>
               </li>
@@ -210,7 +212,9 @@ export default function Resume() {
           </div>
           <div className="resume_item resume_education">
             <div className="title">
-              <p className="bold2">Education</p>
+              <Typography variant="h6" id="bold2">
+                Education
+              </Typography>
             </div>
             <ul>
               <li>
@@ -224,7 +228,9 @@ export default function Resume() {
           </div>
           <div className="resume_item resume_hobbies">
             <div className="title">
-              <p className="bold2">Hobbies</p>
+              <Typography variant="h6" id="bold2">
+                Hobbies
+              </Typography>
             </div>
             <ul>
               <li>
@@ -237,8 +243,37 @@ export default function Resume() {
                 <FontAwesomeIcon icon={faPersonSnowboarding} />
               </li>
               <li>
-                <FontAwesomeIcon icon={faGamepad} />
+                <FontAwesomeIcon
+                  icon={faGamepad}
+                  style={{ fontSize: "25px" }}
+                />
               </li>
+            </ul>
+            <ul>
+              <div className="hobbies-circle-wrap">
+                <FontAwesomeIcon
+                  icon={faMotorcycle}
+                  style={{ fontSize: "24px" }}
+                />
+              </div>
+              <div className="hobbies-circle-wrap">
+                <FontAwesomeIcon
+                  icon={faDumbbell}
+                  style={{ fontSize: "24px" }}
+                />
+              </div>
+              <div className="hobbies-circle-wrap">
+                <FontAwesomeIcon
+                  icon={faPersonSnowboarding}
+                  style={{ fontSize: "24px" }}
+                />
+              </div>
+              <div className="hobbies-circle-wrap">
+                <FontAwesomeIcon
+                  icon={faGamepad}
+                  style={{ fontSize: "24px" }}
+                />
+              </div>
             </ul>
           </div>
         </div>

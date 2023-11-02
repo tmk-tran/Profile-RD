@@ -15,7 +15,7 @@ function UserPage() {
       <p>Your ID is: {user.id}</p>
       <LogOutButton className="btn" />
       </div>
-      <Card>
+      <Card elevation={6}>
         <CardContent>
           <Resume />
         </CardContent>
