@@ -44,6 +44,7 @@ body {
   height: auto;
   display: flex;
   margin: 50px auto;
+  min-width: 300px;
 }
 
 .resume .resume_left {
