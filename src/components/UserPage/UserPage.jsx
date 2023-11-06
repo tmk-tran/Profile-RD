@@ -3,7 +3,6 @@ import LogOutButton from '../LogOutButton/LogOutButton';
 import {useSelector} from 'react-redux';
 
 import { Card, CardContent, Typography } from "@mui/material";
-import Resume from '../Resume/Resume';
 
 function UserPage() {
   // this component doesn't do much to start, just renders some user reducer info to the DOM
@@ -15,11 +14,10 @@ function UserPage() {
       <p>Your ID is: {user.id}</p>
       <LogOutButton className="btn" />
       </div>
-      <Card elevation={6}>
+      {/* <Card elevation={6}>
         <CardContent>
-          <Resume />
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 }
