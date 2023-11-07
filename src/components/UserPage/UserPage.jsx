@@ -9,15 +9,28 @@ function UserPage() {
   const user = useSelector((store) => store.user);
   return (
     <div className="container">
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
       <h2>Welcome, {user.username}!</h2>
       <p>Your ID is: {user.id}</p>
-      <LogOutButton className="btn" />
+      {/* <LogOutButton className="btn" /> */}
       </div>
-      {/* <Card elevation={6}>
-        <CardContent>
+      <Card elevation={6}>
+        <CardContent style={{ textAlign: "center" }}>
+          <Typography variant="h6">
+          Your client project goes here
+          </Typography>
+          <br />
+          <br />
+          <br />
+          <Card elevation={6}>
+            <CardContent>
+              <Typography variant="h5" style={{ textAlign: "center" }}>
+                LET'S GOOOOOOO!
+              </Typography>
+            </CardContent>
+          </Card>
         </CardContent>
-      </Card> */}
+      </Card>
     </div>
   );
 }
