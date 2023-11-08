@@ -19,6 +19,7 @@ app.use(sessionMiddleware);
 
 // start up passport sessions
 app.use(passport.initialize());
+// app.use(passport.session());
 app.use(passport.session());
 
 /* Routes */
