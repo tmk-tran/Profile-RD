@@ -1,5 +1,9 @@
 import React from 'react';
+
+// Logo 
 import LogoPSG from '../LogoPSG/LogoPSG';
+
+// Styling
 import { Typography } from '@mui/material';
 
 // This is one of our simplest components
