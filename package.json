@@ -57,5 +57,5 @@
       "last 1 safari version"
     ]
   },
-  "heroku-run-build-script": false
+  "heroku-run-build-script": true
 }
