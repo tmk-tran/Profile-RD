@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoPSG from '../LogoPSG/LogoPSG';
+import { Typography } from '@mui/material';
 
 // This is one of our simplest components
 // It doesn't have local state,
@@ -10,8 +11,11 @@ function AboutPage() {
   return (
     <div className="container">
       <LogoPSG />
+      <br />
       <div>
-        <p>This about page is for anyone to read!</p>
+        <center>
+        <Typography variant="h4">This project is currently under construction</Typography>
+        </center>
       </div>
     </div>
   );
